@@ -1,0 +1,138 @@
+html { 
+  background-image: url('https://cdn.pixabay.com/photo/2016/11/06/09/58/wikipedia-1802614_1280.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+body {
+  background: transparent;
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  min-width: 210px;
+  max-width: 410px;
+  text-content: center;
+  text-align: center;
+  background-color: rgba(165, 107, 51, .95);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.search, .btn {
+    margin: 5px;
+  }
+.btn {
+  background-color: #2F2E2C;
+  color: white;
+}
+
+.searchResults {
+  width: 75%;
+  margin: 100px auto;
+  padding: 15px 10px;
+  border-radius: 10px;
+  background-color: rgba(35, 35, 35, .85);
+  color: white;
+  display: none;
+} 
+
+.resultContainer {
+  border: 1px ridge grey;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 15px;
+}
+
+.resultContainer a {
+  color: white;
+}
+
+.articleTitle {
+  text-align: left;
+}
+
+.resultContainer a:hover  {
+  text-decoration: none !important;
+  font-weight: 800;
+  color: #2391FF;
+}
+
+ .slide-up {
+  top: 10%;
+}
+
+/* ----------- Mobile Capable ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+  
+    .container {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 85%;
+      text-content: center;
+      text-align: center;
+      background-color: rgba(165, 107, 51, .95);
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .searchResults {
+      width: 90%;
+      margin: 100px auto;
+      padding: 15px 10px;
+      border-radius: 10px;
+      background-color: rgba(35, 35, 35, .85);
+      color: white;
+      display: none;
+    }
+    .search, .btn {
+      margin: 5px;
+    }
+    .resultContainer {
+      border: 1px ridge grey;
+      border-radius: 10px;
+      margin: 5px;
+      padding: 15px;
+    }
+
+    .resultContainer a {
+      color: white;
+    }
+
+    .articleTitle {
+      text-align: left;
+    }
+
+    .resultContainer a:hover  {
+      text-decoration: none !important;
+      font-weight: 800;
+      color: #2391FF;
+    }
+
+     .slide-up {
+      top: 10%;
+    }
+}
+
+/* Autocomplete */
+		.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+		.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+		.autocomplete-selected { background: #F0F0F0; }
+		.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+		.autocomplete-group { padding: 2px 5px; }
+		.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
