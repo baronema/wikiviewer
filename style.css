@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background: transparent;
+  background: transparent !important;
 }
 
 .container {
